@@ -19,7 +19,7 @@
   </head>
 
   <body
-    class="bg-bkg text-white selection:bg-accent selection:text-bkg overflow-hidde"
+    class="bg-bkg text-white text-base selection:bg-accent selection:text-bkg overflow-hidde"
   >
     <div class="parralax">
       <nav
@@ -118,31 +118,158 @@
         </a>
       </header>
       <main
-        class="relative mt-16 sm:mt-24 lg:mt-40 pb-16 -m-16 grid gap-16 sm-gap-24 lg:gap-40 overflow-hidden"
-      ></main>
-      <section
-        aria-labelledby="headline"
-        class="container grid grid-4 text-center max-w-prose"
+        class="relative mt-16 sm:mt-24 lg:mt-40 pb-16 -mb-16 grid gap-16 sm-gap-24 lg:gap-40 overflow-hidden"
       >
-        <div>
-          <small
-            class="tracking-widest text-accent drop-shadow-text-sm uppercase"
-          >
-            What Dreams Are Made of
-          </small>
-          <h2
-            class="text-3xl font-bold tracking-wide drop-shadow-text-sm"
-            id="headline"
-          >
-            Trips for Explorers
-          </h2>
-        </div>
-        <p>
-          We find once-in-a-lifetime locations and reserve them for travelers
-          full of adventure. Calling all explorers and extremists to the trip of
-          their dreams in the most exotic locations all around the globe.
-        </p>
-      </section>
+        <section
+          aria-labelledby="headline"
+          class="container grid gap-4 text-center max-w-prose"
+        >
+          <div>
+            <small
+              class="tracking-widest text-accent drop-shadow-text-sm uppercase"
+            >
+              What Dreams Are Made of
+            </small>
+            <h2
+              class="text-3xl font-bold tracking-wide drop-shadow-text-sm"
+              id="headline"
+            >
+              Trips for Explorers
+            </h2>
+          </div>
+          <p class="text-muted drop-shadow-text-sm">
+            We find once-in-a-lifetime locations and reserve them for travelers
+            full of adventure. Calling all explorers and extremists to the trip
+            of their dreams in the most exotic locations all around the globe.
+          </p>
+        </section>
+
+        <section
+          aria-labelledby="slider"
+          class="container grid gap-4 text-center sm:text-left relative"
+        >
+          <div class="relative">
+            <div
+              class="sm:block hidden bg-accent/20 w-8 h-full absolute -left-4"
+            ></div>
+            <div>
+              <small
+                class="tracking-widest text-accent drop-shadow-text-sm uppercase"
+              >
+                OFF THE BEATEN PATH
+              </small>
+              <h2
+                class="text-3xl font-bold tracking-wide drop-shadow-text-sm"
+                id="slider"
+              >
+                Places without People
+              </h2>
+            </div>
+
+            <div
+              class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center space-x-4 space-y-4"
+            >
+              <p class="text-muted drop-shadow-text-sm max-w-2xl">
+                We specialize in finding places no one else knows about. Here
+                are a few of our favorite spots for true adventurers.
+              </p>
+
+              <div class="flex space-x-4">
+                <button
+                  data-slideBtn
+                  id="prev"
+                  aria-label="show previous image"
+                  class="grid place-items-center bg-accent hover:bg-accent/90 rounded-full p-2 text-bkg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-accent disabled:bg-accent/20 disabled:text-accent"
+                  disabled
+                >
+                  <svg
+                    class="pointer-events-none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-miterlimit="10"
+                      stroke-width="16"
+                    ></circle>
+                    <polyline
+                      points="121.9 161.9 88 128 121.9 94.1"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></polyline>
+                    <line
+                      x1="88"
+                      y1="128"
+                      x2="168"
+                      y2="128"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></line>
+                  </svg>
+                </button>
+                <button
+                  data-slideBtn
+                  id="next"
+                  aria-label="show next image"
+                  class="grid place-items-center bg-accent hover:bg-accent/90 rounded-full p-2 text-bkg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-accent disabled:bg-accent/20 disabled:text-accent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-miterlimit="10"
+                      stroke-width="16"
+                    ></circle>
+                    <polyline
+                      points="134.1 161.9 168 128 134.1 94.1"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></polyline>
+                    <line
+                      x1="88"
+                      y1="128"
+                      x2="168"
+                      y2="128"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
