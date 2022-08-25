@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="color-scheme" content="dark" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="icon"
       type="image/svg+xml"
@@ -123,6 +124,8 @@
         <section
           aria-labelledby="headline"
           class="container grid gap-4 text-center max-w-prose"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
         >
           <div>
             <small
@@ -269,8 +272,129 @@
             </div>
           </div>
         </section>
+        <div class="-mt-10 sm:-mt-30 lg:-mt-36 container">
+          <div
+            data-slideContainer
+            class="flex transition-transform duration-500"
+          >
+            <div
+              data-slide
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 pr-4 card"
+            >
+              <img
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="./assets/Images/slider-1.jpg"
+                alt=""
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Ocean Wonders
+              </p>
+            </div>
+
+            <div
+              data-slide
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 pr-4 card"
+            >
+              <img
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="./assets/Images/slider-2.jpg"
+                alt=""
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Sky Falls
+              </p>
+            </div>
+
+            <div
+              data-slide
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 pr-4 card"
+            >
+              <img
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="./assets/Images/slider-3.jpg"
+                alt=""
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Night Gradients
+              </p>
+            </div>
+
+            <div
+              data-slide
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 pr-4 card"
+            >
+              <img
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="./assets/Images/slider-5.jpg"
+                alt=""
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Greenland
+              </p>
+            </div>
+
+            <div
+              data-slide
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 pr-4 card"
+            >
+              <img
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="./assets/Images/slider-6.jpg"
+                alt=""
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Ocean Falls
+              </p>
+            </div>
+
+            <div
+              data-slide
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 pr-4 card"
+            >
+              <img
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="./assets/Images/slider-7.jpg"
+                alt=""
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Iceland Craft
+              </p>
+            </div>
+            <div
+              data-slide
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 pr-4 card"
+            >
+              <img
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="./assets/Images/slider-8.jpg"
+                alt=""
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Glaciers Lake
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

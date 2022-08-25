@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+  @apply transition-all duration-500 xs:basis-80 hover:basis-96;
+}
